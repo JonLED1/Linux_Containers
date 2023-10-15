@@ -22,7 +22,7 @@
 
 `sudo chroot ~/testfolder /bin/bash`
 
-![Alt text](image.png)
+![Alt text](/images/image.png)
 
 ## Добавление дополнительных файлов для решения проблемы с отсутствием команды "ls" и других
 
@@ -32,7 +32,7 @@
 
 `cp /lib/x86_64-linux-gnu/libpcre2-8.so.0 ~/testfolder/lib/`
 
-![Alt text](image-1.png)
+![Alt text](/images/image-1.png)
 
 НЕДОСТАТКИ `chroot` - необходимость копирования файлов.
 
@@ -46,7 +46,7 @@
 
 `ip netns exec testns bash`
 
-![Alt text](image-2.png)
+![Alt text](/images/image-2.png)
 
 
 ## Более Глубокая Изоляция
@@ -69,4 +69,4 @@ ls
 ls /
 ps aux
 
-![Alt text](image-3.png)
+![Alt text](/images/image-3.png)

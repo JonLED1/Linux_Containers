@@ -16,11 +16,11 @@
 `apt-get install lxd-installer`
 
 `lxd init` (Здесь просто нажимаем на Enter что уствновились значения по умолчанию)
-![Alt text](image-4.png)
+![Alt text](/images/image-4.png)
 Проверяем
 
 `lxc storage list`
-![Alt text](image-5.png)
+![Alt text](/images/image-5.png)
 
 И создаем контейнер
 
@@ -37,7 +37,7 @@
 `exit` -- выходим
 
 `lxc-stop -n test123` - -закрываем
-![Alt text](image-6.png)
+![Alt text](/images/image-6.png)
 
 `nano /var/lib/lxc/test123/config` конфигурация контейнера
 
@@ -51,12 +51,12 @@ Network configuration — Конфегурация сети
 
 .
 `lxc.cgroup2.memory.max = 256M` -- ограничиваем(В режиме Вставка делаем запись)
-![Alt text](image-7.png)
+![Alt text](/images/image-7.png)
 
 Автоматический старт контейнера с системой (добавить в конфиг)
 `lxc.start.auto = 1`
-![Alt text](image-8.png)
-![Alt text](image-9.png)
+![Alt text](/images/image-8.png)
+![Alt text](/images/image-9.png)
 
 `lxc-create --name=con1 --template=ubuntu`  создать контейнер с именем con1 по шаблону ubuntu  (без лог-файла)
 
@@ -73,4 +73,4 @@ Network configuration — Конфегурация сети
 `lxc.log.level = 1`
 
 `lxc-start con2 --logfile=./con2.log --logpriority=NOTICE` запуск контейнера с логированием
-![Alt text](image-10.png)
+![Alt text](/images/image-10.png)

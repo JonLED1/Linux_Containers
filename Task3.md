@@ -20,12 +20,12 @@
 
 `docker --version ` - проверить работу докер, вывести версию.
 
-![Alt text](image-11.png)
+![Alt text](/images/image-11.png)
 
 ## Тестирование Докер
 
 `docker run docker/whalesay cowsay Hello, Docker!` - Запуск контейнера с использованием образа "cowsay".
-![Alt text](image-12.png)
+![Alt text](/images/image-12.png)
 
 `docker run docker/whalesay cowsay -f elephant "Hello, Docker!"`
 
@@ -85,7 +85,7 @@
 
 `docker run -it -h GB --name gb-test ubuntu:22.10` -  запустим контейнер из образа Ubuntu и войдем в него
 
-![Alt text](image-13.png)
+![Alt text](/images/image-13.png)
 
 `ls -l /` - просмотр содержимого корневой директории
 
@@ -95,7 +95,7 @@
 
 `echo "123test" >> /example/passwords.txt` - запишем в файл строчку
 
-![Alt text](image-14.png)
+![Alt text](/images/image-14.png)
 
 Мы создали директорию и файл внутри контейнера Ubuntu. После остановки контейнера данные сохранятся, пока контейнер не будет пересоздан. Если удалить контейнер, то все данные, созданные в нем, будут утеряны.
 
@@ -109,7 +109,7 @@
 
 `cat /test/folder/test.txt`  - Проверим доступность данных с локальной системы
 
-![Alt text](image-15.png)
+![Alt text](/images/image-15.png)
 
 Если удалить контейнер и заново создать, подмонтирова дирректорию /test/folder/, то данные будут доступны в контейнере.
 
